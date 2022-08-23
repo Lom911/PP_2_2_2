@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Список Машин</title>
+</head>
+<body>
+<p>Список Машин</p>
+<div th:each="careta: ${id}">
+    <a th:text="${careta.getNumber()}">VALUE</a>
+    <a th:text="${careta.getModel()}">VALUE</a>
+    <a th:text="${careta.getColor()}">VALUE</a>
+</div>
+
+</body>
+</html>
